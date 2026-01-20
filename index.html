@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PND GROUP LLC — Business Support & Financial Advisory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0e0e0e;
+            color: #eaeaea;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            padding: 90px 10%;
+            position: relative;
+        }
+
+        /* POLYGON STYLE */
+        .polygon {
+            clip-path: polygon(0 0, 100% 3%, 100% 97%, 0 100%);
+            background: #141414;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(
+                    rgba(0,0,0,0.7),
+                    rgba(0,0,0,0.7)
+                ),
+                url("https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=1176&auto=format&fit=crop") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .hero h1 {
+            font-family: "Times New Roman", serif;
+            font-size: 64px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 850px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ffffff;
+            color: #000;
+        }
+
+        /* CENTER BLOCKS */
+        .center {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* SERVICES / ADVANTAGES / PROCESS */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .card {
+            background: #1b1b1b;
+            padding: 35px;
+            clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 5% 100%, 0 90%);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        /* CONTACTS */
+        .contacts {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            width: 100%;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #1b1b1b;
+            border: none;
+            color: #fff;
+        }
+
+        form button {
+            padding: 15px;
+            width: 100%;
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 30px;
+            text-align: center;
+            background: #0a0a0a;
+            font-size: 14px;
+        }
+
+        @media(max-width: 768px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 44px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. HERO -->
+<section class="hero">
+    <div>
+        <h1>PND GROUP LLC</h1>
+        <p>
+            Strategic business support and financial consulting for companies operating in dynamic and regulated markets.
+            We help entrepreneurs, investors, and growing organizations structure capital, manage financial risk,
+            and make confident investment decisions based on real data and long-term objectives.
+        </p>
+        <a href="#contacts" class="btn">Contacts</a>
+    </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section class="polygon">
+    <div class="center">
+        <h2>Who We Are</h2>
+        <p>
+            PND GROUP LLC is a U.S.-based consulting firm focused on practical business support and financial advisory services.
+            We work with startups, private investors, and established companies that require clear financial structure,
+            disciplined planning, and independent strategic insight.
+        </p>
+        <p>
+            Our team combines experience in corporate finance, investment analysis, and operational consulting.
+            We do not sell generic strategies — every recommendation is built around your business model,
+            regulatory environment, and financial goals.
+        </p>
+    </div>
+</section>
+
+<!-- 3. SERVICES -->
+<section>
+    <div class="center">
+        <h2>What We Do</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Business Support</h3>
+                <p>
+                    We assist companies in structuring internal processes, financial controls, and reporting systems.
+                    Our focus is on improving transparency, decision-making speed, and operational stability.
+                    This service is ideal for growing businesses preparing for scale or external funding.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Investment Advisory</h3>
+                <p>
+                    We provide independent investment analysis and strategic guidance for private investors and companies.
+                    Our advice is based on risk assessment, capital allocation efficiency, and long-term value creation.
+                    No product selling — only objective financial insight.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Financial Consulting</h3>
+                <p>
+                    We help clients optimize cash flow, evaluate financial performance, and plan future growth scenarios.
+                    Our consultants work closely with management to align financial strategy with business reality.
+                    The result is controlled growth and predictable financial outcomes.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. ADVANTAGES -->
+<section class="polygon">
+    <div class="center">
+        <h2>Why Clients Choose Us</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Independent Perspective</h3>
+                <p>
+                    We are not tied to banks, funds, or financial products.
+                    This allows us to provide unbiased advice focused solely on your interests.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Practical Experience</h3>
+                <p>
+                    Our recommendations are grounded in real business and financial practice,
+                    not theoretical models or template solutions.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Confidential & Structured</h3>
+                <p>
+                    We maintain strict confidentiality and work with clear processes,
+                    defined milestones, and measurable results.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. PROCESS -->
+<section>
+    <div class="center">
+        <h2>How We Work</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>1. Initial Assessment</h3>
+                <p>
+                    We analyze your business model, financial data, and objectives
+                    to understand risks, constraints, and opportunities.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>2. Strategy Development</h3>
+                <p>
+                    Based on analysis, we build a tailored financial or investment strategy
+                    aligned with your short- and long-term goals.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>3. Implementation Support</h3>
+                <p>
+                    We support execution, monitor results, and adjust strategy
+                    as conditions and priorities change.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 6. CONTACTS -->
+<section id="contacts" class="contacts polygon">
+    <div class="contact-wrapper">
+        <form>
+            <h2>Get in Touch</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div>
+            <h2>Contact Information</h2>
+            <p>
+                If you are looking for structured financial guidance or business support,
+                we invite you to contact us by email.
+                Every inquiry is reviewed personally and treated with full confidentiality.
+            </p>
+            <p><strong>Email:</strong> support@pndgroup.pro</p>
+            <p><strong>Address:</strong> 1295 E Dunne Ave, Morgan Hill, CA, 95037, US</p>
+        </div>
+    </div>
+</section>
+
+<!-- 8. FOOTER -->
+<footer>
+    © 2026 PND GROUP LLC. All rights reserved.
+</footer>
+
+</body>
+</html>
